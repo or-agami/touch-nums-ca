@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Touch the Numbers</title>
+</head>
+
+<body onload="init()">
+
+    <div class="game-window">
+
+        <div class="game-data">
+            <div class="game-settings">
+
+                <div class="level-choose">
+                    <div>
+                        <h2>levelSelect()</h2>
+                    </div>
+                    <div>
+                        <button class="16" onclick="levelSelect(this)">makeEasy(4x4)</button>
+                        <button class="25" onclick="levelSelect(this)">makeHard(5x5)</button>
+                        <button class="36" onclick="levelSelect(this)">makePain(6x6)</button>
+                    </div>
+                </div>
+
+                <div class="start">
+                    <div>
+                        <h2>start()</h2>
+                    </div>
+                    <div>
+                        <button onclick="startGame(this)">game(start)</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="status">
+
+                <div class="time">
+                    <div>
+                        <h2>gameTimer()</h2>
+                    </div>
+                    <div>
+                        <p class="timer"><span id="seconds">00</span>.<span id="tens">000</span></p>
+                    </div>
+                </div>
+
+                <div class="number-or-score">
+                    <div>
+                        <h2>nextNumber()</h2>
+                    </div>
+                    <div>
+                        <p class="next-number" id="best-score">0</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="board">
+            <table>
+                <tbody class="table-layout">
+                    <tr>
+                        <td>num[i]</td>
+                        <td>num[i]</td>
+                        <td>num[i]</td>
+                        <td>num[i]</td>
+                    </tr>
+                    <tr>
+                        <td>num[i]</td>
+                        <td>num[i]</td>
+                        <td>num[i]</td>
+                        <td>num[i]</td>
+                    </tr>
+                    <tr>
+                        <td>num[i]</td>
+                        <td>num[i]</td>
+                        <td>num[i]</td>
+                        <td>num[i]</td>
+                    </tr>
+                    <tr>
+                        <td>num[i]</td>
+                        <td>num[i]</td>
+                        <td>num[i]</td>
+                        <td>num[i]</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/timer.js"></script>
+
+
+</body>
+
+</html>
